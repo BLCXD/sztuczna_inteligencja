@@ -1,0 +1,92 @@
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Sztuczna inteligencja</title>
+    <link
+      rel="icon"
+      href="https://cdn.glitch.me/cdcf6cbd-6f72-427f-bcc4-6dc32a944c6c%2Fai%20(1).png?v=1636584838786"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- PASEK NAWIGACYJNY -->
+    <ul id="nawigacja">
+      <li><a href="#rozpoznawanieTwarzy">Rozpoznawanie twarzy</a></li>
+      <li><a href="#rozpoznawanieTekstu">Rozpoznawanie pisma</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <!-- BANER -->
+    <div id="baner">
+      <h2>
+        "W przeciągu najbliższych stu lat, komputery wyprzedzą ludzi, jeśli
+        chodzi o inteligencję."<br />
+        <span>Stephen Hawking</span>
+      </h2>
+    </div>
+    <!-- ZAWARTOŚĆ STRONY -->
+    <h1 id="rozpoznawanieTwarzy">
+      Rozpoznawanie twarzy
+    </h1>
+    <div class="kontener">
+      <p>
+        Rozpoznawanie twarzy przez różnego rodzaju aplikacje związane jest
+        przede wszystkim z rozpoznawaniem poszczególnych, interesujących
+        elementów naszej twarzy przez sztuczną inteligencję (np. kolor oczu,
+        wielkość nosa). Elementy te są rozpoznawane na podstawie wcześniej
+        skonstruowanej bazy wielu różnych przykładów. Najpierw trzeba więc
+        stworzyć dużą ilość przykładów (zdjęć twarzy) a dopiero później sztuczna
+        inteligencja ich się nauczy.
+      </p>
+      <iframe
+        src="https://teachablemachine.withgoogle.com/v1/"
+        width="1000"
+        height="700"
+        allow="camera;"
+      >
+      </iframe>
+    </div>
+    <!-- ROZPOZNAWANIE TEKSTU -->
+    <h1 id="rozpoznawanieTekstu">
+      Rozpoznawanie tekstu
+    </h1>
+    <div class="kontener">
+      <p>
+        <b>Quick draw</b> to gra oparta na uczeniu maszynowym. Rysujesz, a sieć
+        neuronowa próbuje odgadnąć, co rysujesz. Oczywiście to nie zawsze
+        działa. Ale im więcej się nim bawisz, tym więcej się nauczy. Do tej pory
+        przeszkoliliśmy go na kilkuset koncepcjach i mamy nadzieję, że z czasem
+        dodamy więcej.
+      </p>
+      <a href="https://quickdraw.withgoogle.com/" target="_blank"><img src="https://cdn.glitch.me/cdcf6cbd-6f72-427f-bcc4-6dc32a944c6c%2F0316dabf-3f4c-4688-a34f-c29277e39dea.image.png?v=1636578485378"></a>
+    </div>
+    <!-- GALERIA -->
+    <h1 id="galeria">
+      Galeria
+    </h1>
+    <div class="kontener">
+      <img src="https://cdn.glitch.me/cdcf6cbd-6f72-427f-bcc4-6dc32a944c6c%2Fimg3.jfif?v=1636581366557" class="zdj-galeria">
+      <img src="https://cdn.glitch.me/cdcf6cbd-6f72-427f-bcc4-6dc32a944c6c%2Fimg2.jfif?v=1636581366576" class="zdj-galeria">
+      <img src="https://cdn.glitch.me/cdcf6cbd-6f72-427f-bcc4-6dc32a944c6c%2Fimg1.jfif?v=1636581366613" class="zdj-galeria">
+    </div>
+    <div class="kontener" id="kontakt">
+      <form action="https://formsubmit.co/test@test.pl" method="POST">
+        <fieldset>
+          <legend>
+            Napisz do nas
+          </legend>
+          <label for="imie">Imię</label>
+          <input type="text" maxlength="15" placeholder="Jak masz na imię?" id="imie" name="imie">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" placeholder="Podaj nam swój adres e-mail" id="email">
+          <textarea rows="10" name="uwagi" placeholder="Twoje uwagi"></textarea>
+          <input type="submit" id="btnSubmit" value="Prześlij">
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
